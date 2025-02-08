@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  text-align: center;
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Neon yellow */
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  animation: float 3s ease-in-out infinite;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Neon yellow */
+}
+
+/* Homepage Styles */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000000; /* Jet black background */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.selection-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  animation: slideUp 1s ease-in-out;
+}
+
+.selection-container label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #ffcc00; /* Neon yellow */
+}
+
+.selection-container select {
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffcc00%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  margin-bottom: 10px; /* Added margin to prevent overlap */
+}
+
+.selection-container select:hover {
+  background: #444;
+  border-color: #ffcc00; /* Neon yellow */
+}
+
+.selection-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #ffcc00; /* Neon yellow */
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.selection-container button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Calculator Styles */
+.calculator {
+  display: none; /* Hidden by default */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.table-container {
+  margin: 20px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  transition: transform 0.5s ease;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
+
+th {
+  background: #ffcc00; /* Neon yellow */
+  color: black;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  background: #444;
+  border-color: #ffcc00; 
+}
+tbody tr:hover {
+  background: rgba(255, 204, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+/* Button Styles */
+.button-container {
+  margin: 20px 0;
+}
+
+.button-container button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #ffcc00; /* Neon yellow */
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button-container button:hover {
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  transform: scale(1.05);
+}
+
+
+
+/* Result Styles */
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffcc00; /* Neon yellow */
+}
+
+/* Grading Table Styles */
+.grading-table {
+  margin: 20px auto;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.grading-table th {
+  background: #ffcc00; /* Neon yellow */
+  color: black;
+}
+
+
+

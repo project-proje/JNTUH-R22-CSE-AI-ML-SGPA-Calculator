@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGPA Calculator - JNTUH R22 CSE (AI & ML)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/script.js"></script>
+  
+</head>
+<body>
+  <!-- Homepage -->
+  <div class="homepage" id="homepage">
+    <h1>JNTUH R22 CSE (AI & ML) SGPA Calculator</h1>
+    <div class="selection-container">
+      <label for="year-select">Select Year:</label>
+      <select id="year-select">
+        <option value="" disabled selected>Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+      <label for="semester-select">Select Semester:</label>
+      <select id="semester-select">
+        <option value="" disabled selected>Select Semester</option>
+        <option value="1">1st Semester</option>
+        <option value="2">2nd Semester</option>
+      </select>
+      <button onclick="loadCalculator()">Proceed</button>
+    </div>
+  </div>
+
+  <!-- Calculator Section -->
+  <div class="container calculator" id="calculator">
+    <h2 id="semester-title"></h2>
+    <div class="table-container" id="table-container">
+      <table id="subject-table">
+        <thead>
+          <tr>
+            <th>Subject Name</th>
+            <th>Credits</th>
+            <th>Total Marks</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically generated here -->
+        </tbody>
+      </table>
+    </div>
+    <div class="button-container">
+      <button onclick="calculateSGPA()">Calculate SGPA</button>
+      <button class="reset-button" onclick="resetForm()">Reset</button>
+      <button class="go-back-button" onclick="goBackToHome()">Go Back to Home</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+ 
+</body>
+</html>
